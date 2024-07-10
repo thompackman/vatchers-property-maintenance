@@ -1,0 +1,434 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding:4rem 0 0 0;
+    scroll-behavior: smooth; /* Add smooth scrolling behavior */
+}
+
+/* ----- NAV BAR SETTINGS ----- */
+
+nav {
+    position: fixed;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 0;
+    z-index: 1000; /* Ensure the nav is on top */
+    background-color: black; /* Background color for the nav bar */
+    border-bottom: 5px solid rgb(27, 215, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+
+.sections {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8%;
+    flex-grow: 1;
+}
+
+.sections a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sections a:hover {
+    background-color: rgb(210, 183, 30);
+    border-radius: 10px;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a#fb {
+    color: white; /* Facebook color */
+}
+
+.social-icons a#ig {
+    color: white; /* Instagram color */
+}
+
+
+/* ----- WELCOME COVER PHOTO SETTINGS ----- */
+
+h2 {
+    font-size: 35px;
+}
+
+.welcome {
+    position: relative;
+    width: 100%;
+}
+
+.welcome-cover {
+    width: 100%; /* Make the image stretch across the window width */
+    height: 50vh; /* Set the height to 50% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the div without stretching */
+}
+
+.welcome h2 {
+    position: absolute;
+    bottom: 50px; /* Adjusted to make space for the button */
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.welcome-button {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    background-color: rgb(15, 175, 15);
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.welcome-button:hover {
+    background-color: #9acd32; /* Darker shade of yellow-green */
+    border-color: rgb(210, 183, 30);
+}
+
+/* ----- INTRO LOGO AND WELCOME WITH VIDEO ----- */
+
+.intro {
+    text-align: center;
+    color: white;
+}
+
+
+.intro img.circle-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;  
+} 
+
+.intro h1 {
+    padding: 1rem;
+    font-size: 53px;
+}
+.intro img.circle-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* text-align: center; */
+    /* left: 50%; */
+    transform: translate(-1%, -15%);
+}
+
+
+.intro-video {
+    width: 100%; /* Ensure the video takes up full width */
+    height: auto; /* Allow the video to adjust its height based on the width */
+}
+
+/* ----- YOUR PROJECT IS IMPORTANT TO US ----- */
+
+.important {
+    color: white;
+    background-color: rgb(210, 183, 30);
+    padding: 1rem;
+    text-align: center; /* Center align content */
+}
+
+.important h1 {
+    font-size: 54px; /* Adjust font size as needed */
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: rgb(15, 175, 15);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+/* ----- INFO THREE SEACTIONS ------ */
+
+
+h3 span:first-of-type {
+    color: white;
+}
+
+h3 span:last-of-type {
+    color: rgb(15, 175, 15);
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.info-box p {
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    padding: 1rem;
+    background-color: rgb(210, 183, 30);
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+/* ----- GREEN AND WHITE HEADERS ------- */
+
+h3 { 
+    text-align: center;
+    color: white ;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ------ OUR SERVICES SETTING ------- */
+
+
+
+h4 {
+    text-align: center;
+    font-size: 50px;
+    padding: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1rem 0;
+}
+
+h4 span:first-of-type {
+    color: white;
+}
+
+h4 span:last-of-type {
+    color: rgb(210, 183, 30);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.service-box {
+    flex: 1 1 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(15, 175, 15);
+    border-radius: 15px;
+}
+
+.service-box img {
+    width: 100%;
+    height: 150px;
+    /* border-radius: 15px; */
+}
+
+
+/* -----    SERVICE BOX ------ */
+.service-box p {
+    background: cover;
+    color: white;
+    height: auto;
+    padding: 1REM;
+    font-size: 20px;
+}
+  
+
+/* ------- Frequently Asked Questions Settings ------- */
+
+
+.asked-questions {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(210, 183, 30);
+}
+
+h5 {
+    font-size: 45px;
+}
+
+
+p-faq {
+    font-size: 20px;
+}
+
+/* ------- ABOUT US SETTINGS ------ */
+
+#aboutus {
+    font-size: 53px;
+}
+
+.about {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px; /* Add spacing between intro content and video */
+}
+
+.about img.circle-img {
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.about p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem;
+}
+
+/* -------- CONTACT US SETTINGS ------- */
+
+#contactus {
+    font-size: 53px;
+}
+
+.contact-info {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: white;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    padding-top: 5%;
+    width: 100%;
+    height: 400px; /* You can adjust the height as needed */
+    position: relative;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ------ FOOTER SETTINGS ------- */
+
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* Media queries for smaller screens */
+@media (min-width: 750px) {
+    .info-box {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
+@media (max-width: 750px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        flex: 1 1 100%; /* Make info-boxes take full width on smaller screens */
+        margin: 10px 0;
+    }
+    .services {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .service-box {
+        flex: 1 1 auto;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .service-box img {
+        border-radius: 15px;
+    }
+    
+}
+
+@media (max-width: 530px) {
+    .info-box {
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 30px;
+    }
+
+    .info-box p {
+        font-size: 20px;
+    }
+
+    .sections {
+        gap: 0;
+    }
+    .about img.circle-img {
+        width: 200px;
+        height: 200px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+}
