@@ -138,8 +138,8 @@ h2 {
 
 
 .intro-video {
-    width: 100%; /* Ensure the video takes up full width */
-    height: auto; /* Allow the video to adjust its height based on the width */
+    width: 100%; 
+    height: auto; 
 }
 
 /* ----- YOUR PROJECT IS IMPORTANT TO US ----- */
