@@ -120,20 +120,12 @@ h2 {
     height: 200px;
     border: 2px solid white;
     border-radius: 50%;  
+    transform: translate(-1%, -15%);
 } 
 
 .intro h1 {
     padding: 1rem;
     font-size: 53px;
-}
-.intro img.circle-img {
-    width: 200px;
-    height: 200px;
-    border: 2px solid white;
-    border-radius: 50%;
-    /* text-align: center; */
-    /* left: 50%; */
-    transform: translate(-1%, -15%);
 }
 
 .video-wrapper {
@@ -306,6 +298,14 @@ p-faq {
     font-size: 53px;
 }
 
+.intro img.aaron {
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 50%;
+} 
+
+
 .about {
     text-align: center;
     color: white;
@@ -313,12 +313,7 @@ p-faq {
     margin-bottom: 20px; /* Add spacing between intro content and video */
 }
 
-.about img.circle-img {
-    width: 400px;
-    height: 400px;
-    border: 2px solid white;
-    border-radius: 50%;
-}
+
 
 .about p {
     font-size: 20px;
