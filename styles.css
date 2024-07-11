@@ -151,9 +151,14 @@ h2 {
     height: 100%;
 }
 
-.intro-video {
+/* .intro-video {
     width: 100%; 
     height: auto; 
+} */
+
+iframe {
+    width: 100%; 
+    height: 100vh; 
 }
 
 /* ----- YOUR PROJECT IS IMPORTANT TO US ----- */
